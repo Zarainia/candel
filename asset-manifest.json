@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.48604116.css",
-    "main.js": "/static/js/main.e3f989c9.js",
-    "static/js/787.b3f9d252.chunk.js": "/static/js/787.b3f9d252.chunk.js",
-    "static/media/TimesNewDelniit.ttf": "/static/media/TimesNewDelniit.37ad173c513e78787d5a.ttf",
-    "index.html": "/index.html",
-    "main.48604116.css.map": "/static/css/main.48604116.css.map",
-    "main.e3f989c9.js.map": "/static/js/main.e3f989c9.js.map",
-    "787.b3f9d252.chunk.js.map": "/static/js/787.b3f9d252.chunk.js.map"
+    "main.css": "/candel/static/css/main.c0536988.css",
+    "main.js": "/candel/static/js/main.665592cc.js",
+    "static/js/787.6278573b.chunk.js": "/candel/static/js/787.6278573b.chunk.js",
+    "static/media/TimesNewDelniit.ttf": "/candel/static/media/TimesNewDelniit.37ad173c513e78787d5a.ttf",
+    "index.html": "/candel/index.html",
+    "main.c0536988.css.map": "/candel/static/css/main.c0536988.css.map",
+    "main.665592cc.js.map": "/candel/static/js/main.665592cc.js.map",
+    "787.6278573b.chunk.js.map": "/candel/static/js/787.6278573b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.48604116.css",
-    "static/js/main.e3f989c9.js"
+    "static/css/main.c0536988.css",
+    "static/js/main.665592cc.js"
   ]
 }
