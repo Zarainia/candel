@@ -66,16 +66,20 @@ export const unicodeLength = (word: string) => {
   return unicodeSplit(word).length
 }
 
+export const UPPER_TO_LOWER : Record<string, string> = {'Λ': 'a', '́Λ': 'á', '̀Λ': 'à', 'B': 'ƃ', 'C': 'c', 'Ç': 'ç', 'Δ': 'ᴧ', 'Σ': 'e', '́Σ': 'é', 'F': 'ſ', 'Ԍ': 'ʒ', 'H': 'н', 'I': 'ı', 'Í': 'í', 'Ì': 'ì', 'Î': 'î', 'Э': 'э', 'L': 'ʟ', 'M': 'м', 'N': 'ɴ', 'O': 'o', 'Ψ': 'ч', 'Ж': 'ж', 'Ӂ': 'ӂ', 'R': 'г', 'S': 's', 'X': 'x', 'T': 'т', 'Ѳ': 'ѳ', 'П': 'п', 'Ф': 'ɸ', 'V': 'v', 'W': 'w', '☐': 'ㇿ', 'Y': 'y', 'Z': 'z'} // Conversions from capital to lowercase for Delniit letters
+
+export const LOWER_TO_UPPER : Record<string, string> = Object.fromEntries(Object.entries(UPPER_TO_LOWER).map(a => a.reverse()))
+
+const delniit_split = (text: string) => {
+    return text.match(/.[\u0300\u0301]?/g)
+}
+
 export const localeAwareLowerCase = (text: string) => {
-  return process.env.REACT_APP_LOCALE_STRING
-    ? text.toLocaleLowerCase(process.env.REACT_APP_LOCALE_STRING)
-    : text.toLowerCase()
+  return delniit_split(text)!.map((char) => UPPER_TO_LOWER[char] ?? char).join('')
 }
 
 export const localeAwareUpperCase = (text: string) => {
-  return process.env.REACT_APP_LOCALE_STRING
-    ? text.toLocaleUpperCase(process.env.REACT_APP_LOCALE_STRING)
-    : text.toUpperCase()
+  return delniit_split(text)!.map((char) => LOWER_TO_UPPER[char] ?? char).join('')
 }
 
 export const getToday = () => {

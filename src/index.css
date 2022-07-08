@@ -189,3 +189,16 @@ svg.cursor-pointer:hover {
     transform: translate(0, 0);
   }
 }
+
+@font-face {
+  font-family: 'Times New Delniit';
+  src: url('../public/fonts/TimesNewDelniit.ttf');
+}
+
+html {
+  font-family: 'Times New Delniit', 'Noto Sans', sans-serif;
+}
+
+.keyboard-key {
+  font-size: 110%;
+}
