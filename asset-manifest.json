@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/candel/static/css/main.c0536988.css",
-    "main.js": "/candel/static/js/main.665592cc.js",
+    "main.js": "/candel/static/js/main.8cddb18a.js",
     "static/js/787.6278573b.chunk.js": "/candel/static/js/787.6278573b.chunk.js",
     "static/media/TimesNewDelniit.ttf": "/candel/static/media/TimesNewDelniit.37ad173c513e78787d5a.ttf",
     "index.html": "/candel/index.html",
     "main.c0536988.css.map": "/candel/static/css/main.c0536988.css.map",
-    "main.665592cc.js.map": "/candel/static/js/main.665592cc.js.map",
+    "main.8cddb18a.js.map": "/candel/static/js/main.8cddb18a.js.map",
     "787.6278573b.chunk.js.map": "/candel/static/js/787.6278573b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c0536988.css",
-    "static/js/main.665592cc.js"
+    "static/js/main.8cddb18a.js"
   ]
 }
